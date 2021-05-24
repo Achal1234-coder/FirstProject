@@ -41,7 +41,7 @@ print(mylist)
 
 using List Comprehension
 ```python
-mylist = [i for i in range(5)]
+mylist = [0 for i in range(5)]
 print(mylist)
 ```
 **output**
