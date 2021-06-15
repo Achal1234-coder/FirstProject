@@ -51,13 +51,13 @@ At some point, you might want to undo changes and switch back to an earlier data
 python3 manage.py migrate <app name> 0001_initial
 ```
 **Note :-**
-```
+
 Don’t confuse unapplying migrations with the undo operation you are used to from your favorite text editor.
 
 Not all database operations can be completely reverted. If you remove a field from a model, create a migration, and apply it, Django will remove the respective column from the database.
 
 Unapplying that migration will re-create the column, but it won’t bring back the data that was stored in that column!
-```
+
 
 ## How Django Knows Which Migrations to Apply
 
